@@ -4,8 +4,7 @@ const schema = mongoose.Schema;
 const dbConnect = async () => {
   try {
     await mongoose.connect('mongodb://localhost:27017',
-     // "mongodb+srv://karthee:karthee@cluster0.aq26z.mongodb.net/eduHub?retryWrites=true&w=majority"
-      {
+     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         autoIndex: true,
